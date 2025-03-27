@@ -1,6 +1,6 @@
 import './css/PastEvents.css'
 
-function Blog() {
+function PastEvents() {
   return (
     <>
     <h1>Past Events Page</h1>
