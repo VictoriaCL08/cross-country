@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/VictoriaCL08/cross-country/static/css/main.86bdd6e4.css",
-    "main.js": "/VictoriaCL08/cross-country/static/js/main.66460097.js",
+    "main.css": "/VictoriaCL08/cross-country/static/css/main.f31745d8.css",
+    "main.js": "/VictoriaCL08/cross-country/static/js/main.6dcb23dc.js",
     "index.html": "/VictoriaCL08/cross-country/index.html",
-    "main.86bdd6e4.css.map": "/VictoriaCL08/cross-country/static/css/main.86bdd6e4.css.map",
-    "main.66460097.js.map": "/VictoriaCL08/cross-country/static/js/main.66460097.js.map"
+    "main.f31745d8.css.map": "/VictoriaCL08/cross-country/static/css/main.f31745d8.css.map",
+    "main.6dcb23dc.js.map": "/VictoriaCL08/cross-country/static/js/main.6dcb23dc.js.map"
   },
   "entrypoints": [
-    "static/css/main.86bdd6e4.css",
-    "static/js/main.66460097.js"
+    "static/css/main.f31745d8.css",
+    "static/js/main.6dcb23dc.js"
   ]
 }
