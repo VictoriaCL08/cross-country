@@ -6,7 +6,7 @@ import Layout from './Layout';
 import About from './pages/About';
 import Home from './pages/Home';
 import PastEvents from './pages/PastEvents';
-
+import Schedule from './pages/Schedule';
 import Nopage from './pages/Nopage';
 
 
@@ -17,7 +17,8 @@ function App(){
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
-          <Route path="Past Events" element={<PastEvents />} />
+          <Route path="pastevents" element={<PastEvents />} />
+          <Route path="schedule" element={<Schedule />} />
           <Route path="*" element={<Nopage />} />
         </Route>
       </Routes>
