@@ -1,20 +1,14 @@
 import './css/Home.css';
-import Tree from '../components/Tree';
+import ContentGarnetL from '../components/ContentGarnetL';
+import ContentGarnetR from '../components/ContentGarnetR';
 function App() {
   return (
-    <>
-      <section className = "columns">
-      <Tree 
-       name="live oak"
-       description = "Doesn't lose it's leaves"
-       image = "../images/liveoak-img.jpg"/>
+    <main>
+      <h1>home page</h1>
+      <ContentGarnetL />
+      <ContentGarnetR />
 
-      <Tree 
-      name="dogwood"
-      description = "flowers in spring"
-      image = "images/pink-dogwood-tree-img.jpg"/>
-      </section>
-    </>
+    </main>
   );
 }
 
