@@ -7,7 +7,7 @@ function App() {
       <Tree 
        name="live oak"
        description = "Doesn't lose it's leaves"
-       image = "images/liveoak-img.jpg"/>
+       image = "../images/liveoak-img.jpg"/>
 
       <Tree 
       name="dogwood"

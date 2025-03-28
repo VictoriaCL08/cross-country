@@ -1,5 +1,22 @@
+:root{
+    --background-color: black;
+    --text-color: #dddddd;
+}
+
 header {
-    background: lightcoral;
+    background: var(--background-color);
     text-align: center;
     padding: 10px;
+    color: var(--text-color);
+}
+header img{
+    max-width: 75px;
+    margin: 2% 3% 2% 2%;
+}
+header h1{
+    margin: auto;
+    text-align: center;
+}
+.columns-noflex{
+    display: flex;
 }

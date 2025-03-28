@@ -1,5 +1,11 @@
+:root{
+    --background-color: black;
+    --text-color: #dddddd;
+}
+
 footer{
-    background: lightcoral;
+    background: var(--background-color);
+    color: var(--text-color);
     text-align: center;
     padding: 10px;
 }
