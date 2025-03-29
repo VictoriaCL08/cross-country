@@ -18,7 +18,7 @@ function PastEvents() {
       img="./images/track-group-img.png"
     />
     <ContentGarnetL
-      img="./images/xc-banquet-2023.png"
+      img="./images/xc-banquet-2023.PNG"
       title="Pasta Dinners"
       desc="We get together before some races to carb load before the race. The pasta dinner is provided by the club."
     />
