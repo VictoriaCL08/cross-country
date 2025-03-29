@@ -5,9 +5,13 @@ function Schedule() {
   return (
     <main>
       <div className="practice">
-        <h3>fjdls</h3>
+        <h3>Practice Schedule</h3>
         <p>
-          fhdls jsjdl 
+          Practice is held several times a week. If school is in session, practice is almost always held (excluding
+          weather events). Attendance is optional, and anyone is welcome!
+          We meet Monday-Thursdays at 5:00 and Fridays at 4:30 pm. All runs start at the fields behind Strom. 
+          Most routes are between 3-6 miles. Tuesdays are workout days.
+                     
         </p>
       </div>
 
@@ -64,14 +68,28 @@ function Schedule() {
           <h3>Events This Semester</h3>
         </div>
         <div className="columns wrap">
-          <Event 
-            name="Track Info Meeting"
-            date="1/30"
-            img="./images/track-info-pic.png"
-          />
+            <Event 
+              name="Track Info Meeting"
+              date="1/30"
+              img="./images/track-info-pic.png"
+            />
+
+            <Event 
+              name="Valentine's Day Cookie Run"
+              date="2/14"
+              img="./images/cookie-run.png"
+            />
+            <Event 
+              name="UNC Outdoor Track Meet"
+              date="2/22"
+              img="./images/track-pic.png"
+            />
+            <Event 
+              name="4x4x48"
+              date="2/21-2/23"
+              img="./images/night-4-4-48-img.png"
+            />
         </div>
-
-
       </section>
     </main>
   )  

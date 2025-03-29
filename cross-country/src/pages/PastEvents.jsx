@@ -5,7 +5,6 @@ import ContentGarnetR from '../components/ContentGarnetR'
 function PastEvents() {
   return (
     <main>
-    <h1>Past Events Page</h1>
     <ContentGarnetL
       img='./images/XC-race-start.png'
       title="Cross Country Meets"

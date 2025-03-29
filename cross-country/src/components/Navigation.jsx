@@ -1,8 +1,9 @@
 import './css/Navigation.css';
-import {Outlet, Link} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 function Navigation() {
     return (
+
     <nav id='main-nav'>
         <ul className="columns">
             <li><Link to="/">Home</Link></li>
@@ -13,6 +14,7 @@ function Navigation() {
             <li><Link to="/contactus">Contact Us</Link></li>
         </ul>
     </nav>
+
 
     );
 };
