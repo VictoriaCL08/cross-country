@@ -1,6 +1,8 @@
 import './css/Home.css';
 import ContentGarnetL from '../components/ContentGarnetL';
 import ContentGarnetR from '../components/ContentGarnetR';
+import Footer from "../components/Footer";
+
 function App() {
   return (
     <main>
@@ -28,7 +30,6 @@ function App() {
         To find out more information about joining the club, 
         check out our instagram or garnet gate page and join the groupme.'
       />
-
     </main>
   );
 }

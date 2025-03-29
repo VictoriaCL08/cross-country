@@ -6,8 +6,7 @@ function Layout() {
     return (
         <>
             <Header />
-            <Outlet />
-            <Footer />
+            <Outlet /> 
         </>
     );
 };
