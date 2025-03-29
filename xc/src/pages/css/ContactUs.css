@@ -1,0 +1,26 @@
+.contact-form{
+    margin-left: 5px;
+    margin-right: 15px;
+}
+.contact-form h3{
+    font-size: 18px;
+    font-weight: lighter;
+    margin: 25px 5px 5px 5px;
+    text-align: left;
+}
+.textbox, .textbox2{
+    width: 100%;
+}
+.textbox2{
+    min-height: 150px;
+}
+.btn{
+    text-align: left;
+}
+.btn button{
+    font-size: 18px;
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 100px;
+    height: 25px;
+}
