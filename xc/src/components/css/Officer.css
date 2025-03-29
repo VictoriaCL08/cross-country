@@ -1,14 +1,14 @@
 .officer-main{
-    width: 70%;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 25px;
     margin-bottom: 25px;
     background: #b7b7b7;
     border-radius: 5px;
-    box-shadow:  5px 5px 5px #6b6b6b;  
+    box-shadow:  5px 5px 5px #6b6b6b;
 }
-.officer-main h3{
+.text-section h3{
     margin-top: 2px;
     margin-bottom:2px;
     padding: 2px;
@@ -18,10 +18,10 @@
     line-height: 1.0;
 
 }
-.officer-main h4{
+.text-section h4{
     font-family: gabriola;
     text-align:center;
-    border-bottom: solid 1px var(--section-color-2);
+    border-bottom: solid 1px #cccccc;
     font-size: 32px;
     margin:1px;
     padding: 0;
@@ -29,9 +29,18 @@
 }
 .img-section img{
     width: 75%;
+    margin: auto;
+}
+.img-section{
+    padding: 8px;
+    text-align: center;
+    margin-top: 20px;
 }
 .text-section{
-    padding:5px;
+    padding:8px;
     margin-top: 25px;
     line-height: 1.75;
+}
+.text-section li{
+    text-align: left;
 }

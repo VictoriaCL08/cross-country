@@ -2,11 +2,11 @@ import './css/Officer.css'
 
 function OfficerL(props) {
   return (
-    <main className="columns officer-main">
-        <div className="img-section">
+    <section className="columns officer-main">
+        <div className="img-section one">
             <img src={process.env.PUBLIC_URL + "/" + props.img} />
         </div>
-        <div className="text-section">
+        <div className="text-section one">
             <h3>{props.title}</h3>
             <h4>{props.name}</h4>
             <ul>
@@ -16,7 +16,7 @@ function OfficerL(props) {
                 <li>Favorite Event: {props.event}</li>
             </ul>
         </div>
-    </main>
+    </section>
   )  
 };
 
