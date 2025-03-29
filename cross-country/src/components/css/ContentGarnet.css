@@ -7,10 +7,16 @@
     border-radius: 5px;
 }
 .section-img{
-    padding:5px;
+    padding:5px 10px;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 16px;
+    margin-bottom: 5px;
 }
+.section-img img{
+    max-width: 80%;
+    margin: 2% 10%;
+}
+
 .section-words p{
     margin-left: 10px;
     margin-right: 10px;

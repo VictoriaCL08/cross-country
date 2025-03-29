@@ -1,0 +1,13 @@
+.event{
+    background-color: #cccccc;
+    text-align:center;
+    margin: 0.5%;
+    border-radius: 5px;
+    text-align:center;
+}
+.event img{
+    width: 75%;
+}
+.event h3{
+    border-bottom: none;
+}

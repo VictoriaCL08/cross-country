@@ -20,4 +20,7 @@ body{
   .five{
     flex:5;
   }
+  .wrap{
+    flex-wrap: wrap;
+  }
 }

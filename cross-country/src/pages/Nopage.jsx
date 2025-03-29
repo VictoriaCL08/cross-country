@@ -2,9 +2,9 @@ import './css/Nopage.css'
 
 function Nopage() {
   return (
-    <>
-    <h1>Nop page</h1>
-    </>
+    <main>
+    <h1>This page does not exist</h1>
+    </main>
   )  
 };
 
