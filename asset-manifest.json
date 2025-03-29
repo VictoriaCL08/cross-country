@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/cross-country/static/css/main.5470da0e.css",
-    "main.js": "/cross-country/static/js/main.8d720c76.js",
+    "main.css": "/cross-country/static/css/main.6b65a7bf.css",
+    "main.js": "/cross-country/static/js/main.1058eab8.js",
     "static/media/group-img-index.png": "/cross-country/static/media/group-img-index.05432fd903b01c3378f8.png",
     "static/media/logo-50x50.png": "/cross-country/static/media/logo-50x50.af4963137f6314621d11.png",
     "index.html": "/cross-country/index.html",
-    "main.5470da0e.css.map": "/cross-country/static/css/main.5470da0e.css.map",
-    "main.8d720c76.js.map": "/cross-country/static/js/main.8d720c76.js.map"
+    "main.6b65a7bf.css.map": "/cross-country/static/css/main.6b65a7bf.css.map",
+    "main.1058eab8.js.map": "/cross-country/static/js/main.1058eab8.js.map"
   },
   "entrypoints": [
-    "static/css/main.5470da0e.css",
-    "static/js/main.8d720c76.js"
+    "static/css/main.6b65a7bf.css",
+    "static/js/main.1058eab8.js"
   ]
 }
