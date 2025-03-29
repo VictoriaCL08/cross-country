@@ -6,7 +6,7 @@ import pic from "../components/images/group-img-index.png";
 function App() {
   return (
     <main>
-      <img src={pic} alt="picture"/>
+      
       <ContentGarnetL 
         img="./images/XC-race-start.png"
         title="Mission Statement"
@@ -21,10 +21,10 @@ function App() {
         desc="We are open to runners of all levels from complete beginners who want to start running to experienced runners 
           who want to train and compete competitively. We compete in both cross country and track meets that are a part of 
           the National Intercollegiate Runnning Club Association (NIRCA). All meets are optional."
-        img="./images/xc-race-img-men.png"
+        //img="./images/xc-race-img-men.png"
       />
       <ContentGarnetL
-      img='./images/xc-race.png'
+      //img='./images/xc-race.png'
       title='Club Membership'
       desc='Make sure to fill out the sports club waiver and join DSE within your first week of joining. 
         To find out more information about joining the club, 
