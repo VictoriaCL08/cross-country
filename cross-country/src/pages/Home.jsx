@@ -6,7 +6,7 @@ import pic from "../components/images/group-img-index.png";
 function App() {
   return (
     <main>
-      
+      <img src={pic}/>
       <ContentGarnetL 
         img="./images/XC-race-start.png"
         title="Mission Statement"
