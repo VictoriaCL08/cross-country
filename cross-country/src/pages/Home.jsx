@@ -1,12 +1,12 @@
 import './css/Home.css';
 import ContentGarnetL from '../components/ContentGarnetL';
 import ContentGarnetR from '../components/ContentGarnetR';
-import Footer from "../components/Footer";
+import pic from "../components/images/group-img-index.png";
 
 function App() {
   return (
     <main>
-      <img src={process.env.PUBLIC_URL + "/images/group-img-index.png"}/>
+      <img src={pic} alt="picture"/>
       <ContentGarnetL 
         img="./images/XC-race-start.png"
         title="Mission Statement"
