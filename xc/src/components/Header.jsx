@@ -6,7 +6,7 @@ function Header() {
 return (
     <header className="columns">
         <div className="columns-noflex one">
-            
+            <img src={logoimg} alt=""></img>
             <h1> Carolina XCTF Club </h1>
         </div>
         <div className="one">
