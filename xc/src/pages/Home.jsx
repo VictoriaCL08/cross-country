@@ -2,11 +2,14 @@ import './css/Home.css';
 import ContentGarnetL from '../components/ContentGarnetL';
 import ContentGarnetR from '../components/ContentGarnetR';
 import pic from "../components/images/group-img-index.png";
+import SlideShow from '../components/SlideShow';
 
 function App() {
   return (
     <main>
-      <img src={pic}/>
+
+      <img src={pic} />
+
       <ContentGarnetL 
         img="./images/XC-race-start.png"
         title="Mission Statement"

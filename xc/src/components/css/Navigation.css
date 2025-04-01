@@ -18,3 +18,30 @@
 #main-nav a:hover{
     color: #CCCCCC;
 }
+.hide-small{
+    display: none;
+}
+
+.toggle-btn div{
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    margin: 6px 0;
+}
+.toggle-btn{
+    background: transparent;
+    border: none;
+    display: block;
+    position:absolute;
+    top: 20px;
+    right: 20px;
+}
+
+@media screen and (min-width: 800px) {
+    #main-nav button{
+        display: none;
+    }
+    .hide-small{
+        display: flex;
+    }
+}

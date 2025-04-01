@@ -1,11 +1,25 @@
 import './css/Navigation.css';
 import {Link} from "react-router-dom";
+import {useState} from "react";
 
 function Navigation() {
+
+    const[menuOpen, setMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen);
+    }
+
     return (
 
     <nav id='main-nav'>
-        <ul className="columns">
+        <button className="toggle-btn" onClick={toggleMenu}>
+            <div></div>
+            <div></div>
+            <div></div>
+        </button>
+
+        <ul className={menuOpen?"":"hide-small"}>
             <li><Link to="/">Home</Link></li>
             <li><Link to="/schedule">Schedule</Link></li>
             <li><Link to="/pastevents">Past Events</Link></li>
@@ -19,4 +33,4 @@ function Navigation() {
     );
 };
 
-export default Navigation
+export default Navigation;
