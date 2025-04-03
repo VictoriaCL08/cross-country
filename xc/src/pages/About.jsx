@@ -1,7 +1,7 @@
 import './css/About.css';
 import OfficerL from "../components/OfficerL";
 import OfficerR from "../components/OfficerR";
-import HousePlans from "../components/HousePlans";
+
 
 
 function About() {
