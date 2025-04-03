@@ -10,7 +10,6 @@ import Schedule from './pages/Schedule';
 import ClubRecords from './pages/ClubRecords';
 import ContactUs from './pages/ContactUs';
 import Nopage from './pages/Nopage';
-import NewContact from "./pages/NewContact";
 
 
 function App(){
@@ -24,7 +23,6 @@ function App(){
           <Route path="schedule" element={<Schedule />} />
           <Route path="clubrecords" element={<ClubRecords />} />
           <Route path="contactus" element={<ContactUs />} />
-          <Route path="newcontact" element={<NewContact />} />
           <Route path="*" element={<Nopage />} />
         </Route>
       </Routes>

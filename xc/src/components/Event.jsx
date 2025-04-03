@@ -5,7 +5,7 @@ function Event(prop) {
     <div className="event">
         <h3>{prop.name}</h3>
         <p>{prop.date}</p>
-        <img src={process.env.PUBLIC_URL + "/" + prop.img}/>
+        <img src={"http://localhost:3001/" + prop.img}/>
     </div>
   )  
 };

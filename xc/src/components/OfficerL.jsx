@@ -4,7 +4,7 @@ function OfficerL(props) {
   return (
     <section className="columns officer-main">
         <div className="img-section one">
-            <img src={process.env.PUBLIC_URL + "/" + props.img} />
+            <img src={"http://localhost:3001/" + props.img} />
         </div>
         <div className="text-section one">
             <h3>{props.title}</h3>
@@ -16,7 +16,7 @@ function OfficerL(props) {
                 <li>Favorite Event: {props.event}</li>
             </ul>
         </div>
-    </section>
+    </section> 
   )  
 };
 

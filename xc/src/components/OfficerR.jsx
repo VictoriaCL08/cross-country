@@ -14,7 +14,7 @@ function OfficerR(props) {
             </ul>
         </div>
         <div className="img-section one">
-            <img src={process.env.PUBLIC_URL + "/" + props.img} />
+            <img src={"http://localhost:3001/" + props.img} />
         </div>
     </section>
   )  

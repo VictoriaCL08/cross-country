@@ -11,6 +11,9 @@
 .textbox, .textbox2{
     width: 100%;
 }
+.page-title{
+    font-size: 24px;
+}
 .textbox2{
     min-height: 150px;
 }
