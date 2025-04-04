@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/cross-country/static/css/main.ee5ebf9b.css",
-    "main.js": "/cross-country/static/js/main.9bf0ab56.js",
+    "main.js": "/cross-country/static/js/main.3ffb328f.js",
     "static/media/group-img-index.png": "/cross-country/static/media/group-img-index.05432fd903b01c3378f8.png",
     "static/media/logo-50x50.png": "/cross-country/static/media/logo-50x50.af4963137f6314621d11.png",
     "index.html": "/cross-country/index.html",
     "main.ee5ebf9b.css.map": "/cross-country/static/css/main.ee5ebf9b.css.map",
-    "main.9bf0ab56.js.map": "/cross-country/static/js/main.9bf0ab56.js.map"
+    "main.3ffb328f.js.map": "/cross-country/static/js/main.3ffb328f.js.map"
   },
   "entrypoints": [
     "static/css/main.ee5ebf9b.css",
-    "static/js/main.9bf0ab56.js"
+    "static/js/main.3ffb328f.js"
   ]
 }
