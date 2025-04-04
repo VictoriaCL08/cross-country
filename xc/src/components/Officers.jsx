@@ -9,7 +9,7 @@ const Officers = () => {
 
     useEffect(()=>{
         (async ()=>{
-            const response = await axios.get("http://localhost:3001/api/officers");
+            const response = await axios.get("https://xc-server-backend.onrender.com/api/officers");
             setofficers(response.data);
         })();
 
