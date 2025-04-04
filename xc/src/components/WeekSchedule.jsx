@@ -8,7 +8,7 @@ const WeekSchedule = () => {
 
     useEffect(()=>{
         (async ()=>{
-            const response = await axios.get("http://localhost:3001/api/schedule");
+            const response = await axios.get("https://xc-server-backend.onrender.com/api/schedule");
             setSchedule(response.data);
         })();
 

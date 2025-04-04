@@ -4,7 +4,7 @@ function OfficerL(props) {
   return (
     <section className="columns officer-main">
         <div className="img-section one">
-            <img src={"http://localhost:3001/" + props.img} />
+            <img src={"https://xc-server-backend.onrender.com/api/officers/" + props.img} />
         </div>
         <div className="text-section one">
             <h3>{props.title}</h3>
