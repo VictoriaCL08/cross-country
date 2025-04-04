@@ -5,7 +5,7 @@ function Event(prop) {
     <div className="event">
         <h3>{prop.name}</h3>
         <p>{prop.date}</p>
-        <img src={"https://xc-server-backend.onrender.com/api/events/" + prop.img}/>
+        <img src={"https://xc-server-backend.onrender.com/api/" + prop.img}/>
     </div>
   )  
 };
