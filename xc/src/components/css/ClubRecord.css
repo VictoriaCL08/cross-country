@@ -1,3 +1,9 @@
+.records-h2{
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 0px;
+    display:inline-block;
+}
 .records-table{
     color: black;
     border-collapse: collapse;
@@ -6,7 +12,7 @@
     padding: 6px;
 }
 .records-table td{
-    padding:5px;
+    padding: 0px;
 }
 
 .records-table th, .records-table td{
@@ -15,4 +21,9 @@
 }
  .records-table tr:nth-child(odd){
     background-color: #73000a80;
+}
+
+.title-div{
+    width: 80%;
+    margin: auto;
 }

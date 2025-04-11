@@ -10,6 +10,27 @@ main{
   margin-right: auto;
 }
 
+.columns-noflex{
+  display: flex;
+}
+
+/*.add-btn button{
+  width: 25px;
+  margin: 2px;
+  padding: 2px;
+  background: transparent;
+  border: none;
+}*/
+.add-btn{
+  background-color: transparent;
+  border: none;
+  color:#74000a;
+  margin:10px;
+  font-size: 20px;
+  font-weight:600;
+}
+
+
 @media screen and (min-width: 800px) {
   .columns{
     display: flex;
@@ -22,6 +43,9 @@ main{
   }
   .three{
     flex:3;
+  }
+  .four{
+    flex:4;
   }
   .five{
     flex:5;

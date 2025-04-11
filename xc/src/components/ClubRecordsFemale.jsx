@@ -30,7 +30,9 @@ const ClubRecordsF = () => {
     return(
         
         <>
-            <button id="add-recordF" onClick={openAddDialog}>+</button>
+            <h2 className="records-h2">Women's Records</h2>
+            <button className="add-btn" id="add-recordF" onClick={openAddDialog}>+</button>
+            
             {showAddDialog?(
                 <AddClubRecordFemale
                 closeAddDialog={closeAddDialog}

@@ -44,3 +44,23 @@
 .text-section li{
     text-align: left;
 }
+.officer-titles{
+    text-align: center;
+    font-size: 18px;
+    font-weight: lighter;
+    margin-top: 80px;
+    width: 80%;
+    margin: auto;
+}
+.officer-titles h2{
+    margin: 35px 0 0 0;
+    display:inline-block;
+}
+.officer-titles hr {
+    border: solid 1px black;
+    width: 60%;
+    margin-left:auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+
+}

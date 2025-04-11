@@ -1,10 +1,14 @@
-import './css/ClubRecords.css'
+//import './css/ClubRecords.css'
 import ClubRecordsFemale from "../components/ClubRecordsFemale";
 
 function ClubRecords() {
 
   return (
     <main>
+        <ClubRecordsFemale/>
+    </main>
+
+    /*<main>
     <h2>Women's Records</h2>
       <table class="record-table">
           <tr>
@@ -158,13 +162,8 @@ function ClubRecords() {
               <td>Georgia Track Meet</td>
               <td>2014</td>
           </tr>
-      </table>
-
-            <h3>New Records</h3>
-            <ClubRecordsFemale/>
-        
-
-      <h2>4x4x48 Hall of Fame</h2>
+      </table> */
+      /*<h2>4x4x48 Hall of Fame</h2>
       <table class="record-table">
           <tr>
               <th colspan = "2">These individuals completed the 4x4x48 4 times</th>
@@ -182,7 +181,7 @@ function ClubRecords() {
               <td>2020-2023</td>
           </tr>   
       </table>
-    </main>
+    </main>*/
   )  
 };
 

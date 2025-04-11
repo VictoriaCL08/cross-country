@@ -1,3 +1,4 @@
+import "./css/Event.css"
 import {useState, useEffect} from "react";
 import axios from "axios";
 import Event from "./Event";
@@ -36,7 +37,11 @@ const SemesterEvents = () => {
 
     return(
         <>
-        <button id="add-house" onClick={openAddDialog}>+</button>
+        <div className="event-title">
+          <h3>Events This Semester</h3>
+          <button className="add-btn" id="add-event" onClick={openAddDialog}>+</button>
+        </div>
+        
 
         {showAddDialog?(<AddEvent 
                 closeAddDialog={closeAddDialog}

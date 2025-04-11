@@ -11,3 +11,15 @@
 .event h3{
     border-bottom: none;
 }
+
+.event-title{
+    padding: 5px;
+    margin: 5px;
+    background-color: #cccccc;
+    border-radius: 5px;
+}
+.event-title h3{
+    margin: 15px 0;
+    display:inline-block;
+}
+

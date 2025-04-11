@@ -1,3 +1,4 @@
+import './css/Officer.css'
 import {useState, useEffect} from "react";
 import axios from "axios";
 import OfficerL from "./OfficerL";
@@ -32,7 +33,14 @@ const Officers = () => {
 
     return(
         <>
-            <button id="add-officer" onClick={openAddDialog}>+</button>
+            <div class="officer-titles">
+                   <h2>Officers</h2>
+                    <button className="add-btn" id="add-officer" onClick={openAddDialog}>+</button>
+                <hr></hr>
+                
+                
+            </div>
+            
             {showAddDialog?(
                 <AddOfficer
                 closeAddDialog={closeAddDialog}
