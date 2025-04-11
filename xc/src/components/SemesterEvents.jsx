@@ -1,33 +1,64 @@
 import {useState, useEffect} from "react";
 import axios from "axios";
 import Event from "./Event";
+import AddEvent from "./AddEvent";
 
+//https://xc-server-backend.onrender.com/api/events
 const SemesterEvents = () => {
-    const [events, setevents] = useState([]);
+    const [events, setEvents] = useState([]);
+    const [showAddDialog, setShowAddDialog] = useState(false);
 
     useEffect(()=>{
         (async ()=>{
-            const response = await axios.get("https://xc-server-backend.onrender.com/api/events");
-            setevents(response.data);
+            const response = await axios.get("http://localhost:3001/api/events");
+            setEvents(response.data);
         })();
 
     }, []);
 
+    const openAddDialog = () => {
+        setShowAddDialog(true);
+    }
+
+    const closeAddDialog = () => {
+        console.log("I'm in the close method")
+        setShowAddDialog(false);
+    }
+
+    const updateEvents = (event) => {
+        setEvents((events)=>[...events, event]);
+    };
+
+
+
+
+
+
     return(
-        <div className="columns wrap">
-            {events.map((event)=>(
-                <Event
-                    id={event.id}
-                    name={event.event_name}
-                    date={event.event_date}
-                    img={event.event_img}
+        <>
+        <button id="add-house" onClick={openAddDialog}>+</button>
 
-                />
-            ))}
+        {showAddDialog?(<AddEvent 
+                closeAddDialog={closeAddDialog}
+                updateEvents={updateEvents}
+                /> ): ("")}
 
-            
-        </div>
 
+            <div className="columns wrap">
+                {events.map((event)=>(
+                    <Event
+                        key={event.name}
+                        id={event.id}
+                        name={event.event_name}
+                        date={event.event_date}
+                        img={event.event_img}
+
+                    />
+                ))}
+
+                
+            </div>
+        </>
     )
 
 };

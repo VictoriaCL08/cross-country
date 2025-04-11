@@ -1,0 +1,18 @@
+.records-table{
+    color: black;
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+    padding: 6px;
+}
+.records-table td{
+    padding:5px;
+}
+
+.records-table th, .records-table td{
+    border: 1px solid black;
+    text-align: center;
+}
+ .records-table tr:nth-child(odd){
+    background-color: #73000a80;
+}

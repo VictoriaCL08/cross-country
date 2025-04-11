@@ -1,6 +1,8 @@
 import './css/ClubRecords.css'
+import ClubRecordsFemale from "../components/ClubRecordsFemale";
 
 function ClubRecords() {
+
   return (
     <main>
     <h2>Women's Records</h2>
@@ -157,6 +159,10 @@ function ClubRecords() {
               <td>2014</td>
           </tr>
       </table>
+
+            <h3>New Records</h3>
+            <ClubRecordsFemale/>
+        
 
       <h2>4x4x48 Hall of Fame</h2>
       <table class="record-table">
