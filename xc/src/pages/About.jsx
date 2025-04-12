@@ -1,4 +1,3 @@
-//import './css/About.css';
 import OfficerL from "../components/OfficerL";
 import OfficerR from "../components/OfficerR";
 import Officers from "../components/Officers";

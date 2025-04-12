@@ -38,49 +38,42 @@ const AddOfficer = (props) => {
                     <span id="dialog-close" className="w3-button w3-display-topright" onClick={props.closeAddDialog}>&times;</span>
                     <form id="add-property-form" onSubmit={addToServer}>
                         <h3>Add New Officer</h3>
-
-                        <p>
-                            <label htmlFor="position">Officer Position:</label>
-                            <input type="text" id="position" name="position"  min="3" required></input>
-                        </p>
-                        <p>
-                            <label htmlFor="name">Officer Name:</label>
-                            <input type="text" id="name" name="name"  min="3" required></input>
-                        </p>
-                        <p>
-                            <label htmlFor="major">Major:</label>
-                            <input type="text" id="major" name="major"  min="3" required></input>
-                        </p>
-                        <p>
-                            <label htmlFor="year">Year:</label>
-                            <input type="text" id="year" name="year"  min="3" required></input>
-                        </p>
-                        <p>
-                            <label htmlFor="hometown">Home town:</label>
-                            <input type="text" id="hometown" name="hometown"  min="3" required></input>
-                        </p>
-                        <p>
-                            <label htmlFor="favorit_event">Favorite Event:</label>
-                            <input type="text" id="favorite_event" name="favorite_event"  min="3" required></input>
-                        </p>
-                       
-                    
-
-                        <section className="columns">
-                            <div>
-                                <p id="img-prev-section">
-                                    {prevSrc!=""?
-                                    (<img id="img-prev" src={prevSrc}></img>):
-                                    ("")}
-                                    
-                                </p>
+                        <div className="columns-noflex">
+                            <div className="labels one">
+                                <p><label htmlFor="position">Position:</label></p>
+                                <p><label htmlFor="name">Name:</label></p>
+                                <p><label htmlFor="major">Major:</label></p>
+                                <p><label htmlFor="year">Year:</label></p>
+                                <p><label htmlFor="hometown">Home town:</label></p>
+                                <p><label htmlFor="favorit_event">Favorite Event:</label></p>
                             </div>
-                            <p id="img-upload">
-                                <label htmlFor="img">Upload Image:</label>
-                                <input type="file" id="img" name="img" accept="image/*" onChange={uploadImage}/>
-                            </p>
-                        </section>
 
+                            <div className="inputs two">
+                                <p><input type="text" id="position" name="position"  min="3" required></input></p>
+                                <p><input type="text" id="name" name="name"  min="3" required></input></p>
+                                <p><input type="text" id="major" name="major"  min="3" required></input></p>
+                                <p><input type="text" id="year" name="year"  min="3" required></input></p>
+                                <p><input type="text" id="hometown" name="hometown"  min="3" required></input></p>
+                                <p><input type="text" id="favorite_event" name="favorite_event"  min="3" required></input></p>
+                                
+                            </div>
+                            
+                         </div>    
+                            <section className="columns-noflex one">
+                                   
+                                    <p id="img-prev-section">
+                                        {prevSrc!=""?
+                                        (<img id="img-prev" src={prevSrc}></img>):
+                                        ("")}
+                                        
+                                    </p>
+                                    
+                                    <p id="img-upload">
+                                        <label htmlFor="img">Upload Image:</label>
+                                        <input type="file" id="img" name="img" accept="image/*" onChange={uploadImage}/>
+                                    </p>
+                            </section>
+                              
                         <p>
                             <button type="submit">Submit</button>
                         </p>

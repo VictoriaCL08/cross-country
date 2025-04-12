@@ -1,7 +1,7 @@
 import "./css/Dialog.css";
 import React, {useState} from "react";
 
-const AddClubRecordFemale = (props) => {
+const AddClubRecordMale = (props) => {
      const [result, setResult] = useState("");
 
 
@@ -12,7 +12,7 @@ const AddClubRecordFemale = (props) => {
         const formData = new FormData(event.target);
         console.log(...formData);
         
-        const response = await fetch("http://localhost:3001/api/recordsFemale", {
+        const response = await fetch("http://localhost:3001/api/recordsMale", {
             "method":"POST",
             "body":formData
         });
@@ -21,7 +21,7 @@ const AddClubRecordFemale = (props) => {
             setResult("Club Record added successfully");
             event.target.reset();
             props.closeAddDialog();
-            props.updateRecordsFemale(await response.json());
+            props.updateRecordsMale(await response.json());
         } else {
             setResult("Error adding record");
         }
@@ -34,6 +34,7 @@ const AddClubRecordFemale = (props) => {
                     <span id="dialog-close" className="w3-button w3-display-topright" onClick={props.closeAddDialog}>&times;</span>
                     <form id="add-property-form" onSubmit={addToServer}>
                         <h3>Add New Record</h3>
+
                         <div className="columns-noflex">
                             <div className="labels one">
                                 <p><label htmlFor="event">Event:</label></p>
@@ -51,6 +52,7 @@ const AddClubRecordFemale = (props) => {
                             </div>
 
                         </div>
+                       
                         <p>
                             <button type="submit">Submit</button>
                         </p>
@@ -62,4 +64,4 @@ const AddClubRecordFemale = (props) => {
     );
 };
 
-export default AddClubRecordFemale;
+export default AddClubRecordMale;

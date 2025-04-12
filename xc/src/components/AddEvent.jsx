@@ -38,17 +38,16 @@ const AddEvent = (props) => {
                     <span id="dialog-close" className="w3-button w3-display-topright" onClick={props.closeAddDialog}>&times;</span>
                     <form id="add-property-form" onSubmit={addToServer}>
                         <h3>Create New Event</h3>
-
-                        <p>
-                            <label htmlFor="event_name">Event Name:</label>
-                            <input type="text" id="event_name" name="event_name" required min="1"></input>
-                        </p>
-
-                        <p>
-                            <label htmlFor="event_date">Event Date:</label>
-                            <input type="text" id="event_date" name="event_date" min="1" required></input>
-                        </p>
-
+                        <div className="columns-noflex">
+                            <div className="labels one">
+                                <p><label htmlFor="event_name">Event Name:</label></p>
+                                <p><label htmlFor="event_date">Event Date:</label></p>
+                            </div>
+                            <div className="inputs two">
+                                <p><input type="text" id="event_name" name="event_name" required min="1"></input></p>
+                                <p><input type="text" id="event_date" name="event_date" min="1" required></input></p>
+                            </div>
+                        </div>
                         <section className="columns">
                             <div>
                                 <p id="img-prev-section">
@@ -63,7 +62,7 @@ const AddEvent = (props) => {
                                 <input type="file" id="img" name="img" accept="image/*" onChange={uploadImage}/>
                             </p>
                         </section>
-
+                        
                         <p>
                             <button type="submit">Submit</button>
                         </p>

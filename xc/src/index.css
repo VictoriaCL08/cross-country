@@ -13,14 +13,6 @@ main{
 .columns-noflex{
   display: flex;
 }
-
-/*.add-btn button{
-  width: 25px;
-  margin: 2px;
-  padding: 2px;
-  background: transparent;
-  border: none;
-}*/
 .add-btn{
   background-color: transparent;
   border: none;

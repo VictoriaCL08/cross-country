@@ -21,8 +21,30 @@
 #delete-dialog button {
   margin-right: 10px;
 }
+.dialog-div{
+  text-align:left;
+}
+.add-form input {
+  text-align:left;
+}
+.add-form{
+  text-align:right;
+}
+.labels{
+  text-align: right;
+}
 
-@media only screen and (min-width: 600px) {
+.inputs{
+
+  margin-right: 15%;
+  padding:0;
+}
+.inputs input{
+  height: 20px;
+  width: 70%;
+}
+
+@media only screen and (min-width: 800px) {
   #img-prev-section {
     flex: 1;
     max-width: 150px;

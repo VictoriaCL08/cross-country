@@ -20,3 +20,7 @@ header h1{
 .columns-noflex{
     display: flex;
 }
+
+@media only screen and (max-width: 800px) {
+   
+}
