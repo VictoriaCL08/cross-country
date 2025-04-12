@@ -4,14 +4,14 @@ import axios from "axios";
 import Event from "./Event";
 import AddEvent from "./AddEvent";
 
-//https://xc-server-backend.onrender.com/api/events
+//  http://localhost:3001/api/events
 const SemesterEvents = () => {
     const [events, setEvents] = useState([]);
     const [showAddDialog, setShowAddDialog] = useState(false);
 
     useEffect(()=>{
         (async ()=>{
-            const response = await axios.get("http://localhost:3001/api/events");
+            const response = await axios.get("https://xc-server-backend.onrender.com/api/events");
             setEvents(response.data);
         })();
 
