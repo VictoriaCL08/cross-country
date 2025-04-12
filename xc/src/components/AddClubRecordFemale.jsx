@@ -11,8 +11,8 @@ const AddClubRecordFemale = (props) => {
 
         const formData = new FormData(event.target);
         console.log(...formData);
-        
-        const response = await fetch("http://localhost:3001/api/recordsFemale", {
+        //http://localhost:3001/api/recordsFemale
+        const response = await fetch("https://xc-server-backend.onrender.com/api/recordsFemale", {
             "method":"POST",
             "body":formData
         });

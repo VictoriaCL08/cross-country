@@ -1,9 +1,10 @@
 import './css/Officer.css'
+//http://localhost:3001/images/
 function OfficerL(props) {
   return (
     <section className="columns officer-main">
         <div className="img-section one">
-            <img src={"http://localhost:3001/images/" + props.img} />
+            <img src={"https://xc-server-backend.onrender.com/api/officers/images/" + props.img} />
         </div>
         <div className="text-section one">
             <h3>{props.title}</h3>

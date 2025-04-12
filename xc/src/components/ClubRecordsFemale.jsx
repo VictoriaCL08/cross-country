@@ -10,7 +10,8 @@ const ClubRecordsF = () => {
 
     useEffect(()=>{
             (async ()=>{
-                const response = await axios.get("http://localhost:3001/api/recordsFemale");
+                //http://localhost:3001/api/recordsFemale
+                const response = await axios.get("https://xc-server-backend.onrender.com/api/recordsFemale");
                 setRecordsFemale(response.data);
             })();
     
