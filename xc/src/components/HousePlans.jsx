@@ -1,5 +1,5 @@
 import {useState, useEffect} from "react";
-import "./css/HousePlan.css";
+
 import axios from "axios";
 import HousePlan from "./HousePlan";
 import AddHousePlan from "./AddHousePlan";
@@ -38,15 +38,15 @@ const HousePlans = () => {
             <button id="add-house" onClick={openAddDialog}>+</button>
 
             {showAddDialog?(<AddHousePlan 
-                            closeAddDialog={closeAddDialog}
-                            updateHousePlans={updateHousePlans}
-                            /> ): ("")}
+                                closeAddDialog={closeAddDialog} 
+                                updateHousePlans={updateHousePlans}
+                                /> ): ("")}
             
             <div id="house-plans" className="columns">
                 {houses.map((house)=>(
                     <HousePlan
                     key={house.name}
-                    _id={houses._id}
+                    _id={house._id}
                     name={house.name}
                     size={house.size}
                     bedrooms={house.bedrooms}
