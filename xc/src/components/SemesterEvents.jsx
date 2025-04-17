@@ -52,10 +52,10 @@ const SemesterEvents = () => {
             <div className="columns wrap">
                 {events.map((event)=>(
                     <Event
-                        key={event.name}
-                        id={event.id}
-                        name={event.event_name}
-                        date={event.event_date}
+                        key={event.event_name}
+                        _id={event._id}
+                        event_name={event.event_name}
+                        event_date={event.event_date}
                         img={event.event_img}
 
                     />

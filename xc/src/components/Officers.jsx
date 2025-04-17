@@ -6,7 +6,7 @@ import AddOfficer from "./AddOfficer";
 
 
 // https://github.com/VictoriaCL08/VictoriaCL08.github.io/blob/main/csce242/json/about-us.json
-//  http://localhost:3001/api/officers
+//            https://xc-server-backend.onrender.com/api/officers
 
 const Officers = () => {
     const [officers, setofficers] = useState([]);
@@ -14,7 +14,7 @@ const Officers = () => {
 
     useEffect(()=>{
         (async ()=>{
-            const response = await axios.get("https://xc-server-backend.onrender.com/api/officers");
+            const response = await axios.get("http://localhost:3001/api/officers");
             setofficers(response.data);
         })();
 
@@ -34,7 +34,7 @@ const Officers = () => {
 
     return(
         <>
-            <div class="officer-titles">
+            <div className="officer-titles">
                    <h2>Officers</h2>
                     <button className="add-btn" id="add-officer" onClick={openAddDialog}>+</button>
                 <hr></hr>
@@ -53,13 +53,13 @@ const Officers = () => {
 
                     <OfficerL
                         key={officer.name}
-                        _id={officer.id}
-                        title={officer.position}
+                        _id={officer._id}
+                        position={officer.position}
                         name={officer.name}
                         major={officer.major}
                         year={officer.year}
-                        home={officer.hometown}
-                        event={officer.favorite_event}
+                        hometown={officer.hometown}
+                        favorite_event={officer.favorite_event}
                         img={officer.img}
                     />
                 ))}
