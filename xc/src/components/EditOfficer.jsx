@@ -1,6 +1,7 @@
 import "./css/Dialog.css";
 import React, { useState } from "react";
 
+//http://localhost:3001/api/officers/
 const EditOfficer = (props) => {
   const [result, setResult] = useState("");
   const [prevSrc, setPrevSrc] = useState("");
@@ -16,7 +17,7 @@ const EditOfficer = (props) => {
     const formData = new FormData(event.target);
     console.log(...formData);
 
-    const response = await fetch(`http://localhost:3001/api/officers/${props._id}`,{
+    const response = await fetch(`https://xc-server-backend.onrender.com/api/officers/${props._id}`,{
       method:"PUT",
       body:formData
     });

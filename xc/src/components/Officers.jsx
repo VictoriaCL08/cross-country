@@ -6,7 +6,7 @@ import AddOfficer from "./AddOfficer";
 
 
 // https://github.com/VictoriaCL08/VictoriaCL08.github.io/blob/main/csce242/json/about-us.json
-//            https://xc-server-backend.onrender.com/api/officers
+//            http://localhost:3001/api/officers
 
 const Officers = () => {
     const [officers, setofficers] = useState([]);
@@ -14,7 +14,7 @@ const Officers = () => {
 
     useEffect(()=>{
         (async ()=>{
-            const response = await axios.get("http://localhost:3001/api/officers");
+            const response = await axios.get("https://xc-server-backend.onrender.com/api/officers");
             setofficers(response.data);
         })();
 

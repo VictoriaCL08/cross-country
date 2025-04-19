@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import EditEvent from "./EditEvent";
 import DeleteEvent from "./DeleteEvent";
 
-//     https://xc-server-backend.onrender.com/images/
+//     http://localhost:3001/images/
 
 const Event = (props)=> {
   const [event, setEvent] = useState(props);
@@ -73,7 +73,7 @@ const Event = (props)=> {
           <h3>{event.event_name}</h3>
 
           <p>{event.event_date}</p>
-          <img src={"http://localhost:3001/images/"+event.img}/>
+          <img src={"https://xc-server-backend.onrender.com/images/"+event.img}/>
       </div>
 
 

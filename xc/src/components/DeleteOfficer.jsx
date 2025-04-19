@@ -1,12 +1,13 @@
 import "./css/Dialog.css";
 import React, { useState } from "react";
 
+//http://localhost:3001/api/officers/
 const DeleteOfficer = (props) => {
   const [result, setResult] = useState("");
   console.log(props._id)
 
   const deleteOfficer = async() => {
-    const response = await fetch(`http://localhost:3001/api/officers/${props._id}`,{
+    const response = await fetch(`https://xc-server-backend.onrender.com/api/officers/${props._id}`,{
       method:"DELETE"
     });
 

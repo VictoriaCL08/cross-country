@@ -3,7 +3,7 @@ import React, {useState } from "react";
 import EditOfficer from "./EditOfficer";
 import DeleteOfficer from "./DeleteOfficer";
 
-//      https://xc-server-backend.onrender.com/images/
+//          http://localhost:3001/images/
 const OfficerL = (props) => {
   const [officer, setOfficer] = useState(props);
   const [showEditDialog, setShowEditDialog] = useState(false);
@@ -69,7 +69,7 @@ const OfficerL = (props) => {
 
             <section className="columns officer-main">
                 <div className="img-section one">
-                    <img src={"http://localhost:3001/images/" + props.img} />
+                    <img src={"https://xc-server-backend.onrender.com/images/" + props.img} />
                 </div>
                 <div className="text-section one">
                     <div id="change-buttons">

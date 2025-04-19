@@ -16,8 +16,8 @@ const AddOfficer = (props) => {
         const formData = new FormData(event.target);
         console.log(...formData);
         
-        //    https://xc-server-backend.onrender.com/api/officers
-        const response = await fetch("http://localhost:3001/api/officers", {
+        //    http://localhost:3001/api/officers
+        const response = await fetch("https://xc-server-backend.onrender.com/api/officers", {
             "method":"POST",
             "body":formData
         });
