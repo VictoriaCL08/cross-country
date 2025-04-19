@@ -44,27 +44,17 @@ const EditEvent = (props) => {
             &times;
           </span>
           <form id="edit-property-form" onSubmit={onSubmit}>
-            <p>
-
-              <label htmlFor="event_name ">Event Name:</label>
-              <input
-                type="text"
-                id="event_name"
-                name="event_name"
-                defaultValue={props.event_name}
-                required
-              />
-            </p>
-            <p>
-              <label htmlFor="event_date">Date:</label>
-              <input
-                type="text"
-                id="event_date"
-                name="event_date"
-                defaultValue={props.event_date}
-                required
-              />
-            </p>
+            <h3>Edit Event</h3>
+            <div className="columns-noflex">
+              <div className="labels one">
+                <p><label htmlFor="event_name ">Event Name:</label></p>
+                <p><label htmlFor="event_date">Date:</label></p>
+              </div>
+              <div className = "inputs two">
+                <p> <input type="text" id="event_name" name="event_name" defaultValue={props.event_name} required /> </p>
+                <p> <input  type="text"  id="event_date"  name="event_date"  defaultValue={props.event_date}  required /> </p>
+              </div>
+            </div>
             <section className="columns">
                     <div>
                         <p id="img-prev-section">

@@ -1,7 +1,7 @@
 import "./css/ClubRecord.css"
 import {useState, useEffect} from "react";
 import axios from "axios";
-import Record from "./Record";
+import Record from "./RecordFemale";
 import AddClubRecordFemale from "./AddClubRecordFemale";
 
 const ClubRecordsF = () => {
@@ -50,7 +50,7 @@ const ClubRecordsF = () => {
                 </tr>
                 {recordsFemale.map((record)=>(
                     <Record
-                        id={record.id}
+                        _id={record._id}
                         key={record.event}
                         event={record.event}
                         name={record.name}

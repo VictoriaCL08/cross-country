@@ -4,11 +4,13 @@
     margin: 5px;
     border-radius: 5px;
     text-align:center;
-    max-width:300px;
+    max-width:311px;
+    height: 350px;
 
 }
 .event-div img{
     max-width: 75%;
+    margin: auto;
    
 }
 .event-div h3{

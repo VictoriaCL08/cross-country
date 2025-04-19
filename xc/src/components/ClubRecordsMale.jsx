@@ -1,7 +1,7 @@
 import "./css/ClubRecord.css"
 import {useState, useEffect} from "react";
 import axios from "axios";
-import Record from "./Record";
+import Record from "./RecordMale";
 import AddClubRecordMale from "./AddClubRecordMale";
 
 const ClubRecordsM = () => {

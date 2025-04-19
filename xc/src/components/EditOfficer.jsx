@@ -45,26 +45,26 @@ const EditOfficer = (props) => {
           </span>
           <form id="edit-property-form" onSubmit={onSubmit}>
             <h3>Edit Officer</h3>
-                <p><label htmlFor="position">Position:</label>
-                <input type="text" id="position" name="position" defaultValue={props.position} required /></p>
 
-                <p><label htmlFor="name ">Name:</label>
-                <input type="text" id="name" name="name" defaultValue={props.name} required /></p>
-
-                <p><label htmlFor="major">Major:</label>
-                <input type="text" id="major" name="major" defaultValue={props.major} required /></p>
-
-                <p><label htmlFor="year">Year:</label>
-                <input type="text" id="year" name="year" defaultValue={props.year} required /></p>
-
-                <p><label htmlFor="hometown">Home town:</label>
-                <input type="text" id="hometown" name="hometown" defaultValue={props.hometown} required /></p>
-
-                <p><label htmlFor="favorite_event">Favorite Event:</label>
-                <input type="text" id="favorite_event" name="favorite_event" defaultValue={props.favorite_event} required /></p>
-          
-
-            <section className="columns">
+            <div className="columns-noflex">
+              <div className="labels one">
+                <p><label htmlFor="position">Position:</label></p>
+                <p><label htmlFor="name ">Name:</label></p>
+                <p><label htmlFor="major">Major:</label></p>
+                <p><label htmlFor="year">Year:</label></p>
+                <p><label htmlFor="hometown">Home town:</label></p>
+                <p><label htmlFor="favorite_event">Favorite Event:</label></p>
+              </div>
+              <div className="inputs two">
+                <p><input type="text" id="position" name="position" defaultValue={props.position} required /></p>
+                <p><input type="text" id="name" name="name" defaultValue={props.name} required /></p>
+                <p> <input type="text" id="major" name="major" defaultValue={props.major} required /></p>
+                <p><input type="text" id="year" name="year" defaultValue={props.year} required /></p>
+                <p><input type="text" id="hometown" name="hometown" defaultValue={props.hometown} required /></p>
+                <p><input type="text" id="favorite_event" name="favorite_event" defaultValue={props.favorite_event} required /></p>
+              </div>
+            </div>
+            <section className="columns-noflex one">
                     <div>
                         <p id="img-prev-section">
                             {prevSrc!=""?
