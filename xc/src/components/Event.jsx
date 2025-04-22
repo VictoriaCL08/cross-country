@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import EditEvent from "./EditEvent";
 import DeleteEvent from "./DeleteEvent";
 
-//     http://localhost:3001/images/
+//       http://localhost:3001/images/
 
 const Event = (props)=> {
   const [event, setEvent] = useState(props);

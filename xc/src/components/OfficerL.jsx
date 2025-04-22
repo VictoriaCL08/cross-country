@@ -3,7 +3,7 @@ import React, {useState } from "react";
 import EditOfficer from "./EditOfficer";
 import DeleteOfficer from "./DeleteOfficer";
 
-//          http://localhost:3001/images/
+//      http://localhost:3001/images/    
 const OfficerL = (props) => {
   const [officer, setOfficer] = useState(props);
   const [showEditDialog, setShowEditDialog] = useState(false);
@@ -71,7 +71,7 @@ const OfficerL = (props) => {
                 <div className="img-section one">
                     <img src={"https://xc-server-backend.onrender.com/images/" + props.img} />
                 </div>
-                <div className="text-section one">
+                <div className="t0ext-section one">
                     <div id="change-buttons">
                       <a href="#" onClick={openEditDialog} >
                         &#9998;

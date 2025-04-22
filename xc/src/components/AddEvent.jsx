@@ -15,7 +15,7 @@ const AddEvent = (props) => {
 
         const formData = new FormData(event.target);
         console.log(...formData);
-        //http://localhost:3001/api/events
+        //    http://localhost:3001/api/events
         const response = await fetch("https://xc-server-backend.onrender.com/api/events", {
             "method":"POST",
             "body":formData
